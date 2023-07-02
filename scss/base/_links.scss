@@ -1,0 +1,10 @@
+.c-link{   
+    transition: .2s;
+    &:hover{
+        @include hoverScale(0,0);
+    }   
+}
+
+.dropdown-menu{
+    border: none !important; //saca el borde de bootstrap
+}

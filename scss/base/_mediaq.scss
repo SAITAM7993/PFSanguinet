@@ -1,0 +1,31 @@
+@media (max-width:990px) {
+    
+    .c-text-center {
+        text-align: center;
+    }
+    a {
+        padding-left: 30px !important; //para solucionar mobile, queda muy pegado a la izquierda       
+    }
+}
+@media (max-width:511px) {
+    /*para que quede centrado en dispositivos chicos*/
+    .c-footer-space {
+        /*para separar los items del footer*/
+        margin: 0;
+    }
+
+    /*para que quede centrado en dispositivos chicos*/
+    .c-scroll-top {
+        position: absolute;
+        right: 2rem;
+    }
+
+    .c-h3 {
+        margin: 5px 30px 5px 30px;
+    }
+
+    .display-5 {
+        font-size: $c-fs-6;
+    }
+   
+}
