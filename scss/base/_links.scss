@@ -4,7 +4,8 @@
     &:hover{
         @include hoverScale(0,0);
         color: $action-color-contrast;
-    }   
+    }      
+    
 }
 
 .dropdown-menu{
