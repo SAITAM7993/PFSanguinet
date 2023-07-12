@@ -7,8 +7,13 @@ $prefix: 'def' !default;
 
 //TEXTOS
 //font default texto
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
-$font-primary: 'Roboto',sans-serif;
+//@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap'); DESCOMENTAR LUEGO, está más linda
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500&display=swap');
+
+//$font-primary: 'Roboto',sans-serif; DESCOMENTAR LUEGO,está más linda
+$font-primary:  'Inter', sans-serif; 
+
+
 $font-text: var(--#{$prefix}-font-primary, $font-primary); //fuente primaria 
 
 

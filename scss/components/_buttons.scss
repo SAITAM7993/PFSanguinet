@@ -6,7 +6,7 @@ a{
     border-radius: 50px;
     transition: .3s;
     /*para redondear botones de boostrap*/
-    background-color: $action-color-primary !important;
+    background-color: $action-color-primary;
     &:hover{
         @include hoverScale(1.1, 1.1);//uso mixin para agrandar y cambiar colores
     }
@@ -29,7 +29,7 @@ a{
 .c-button{
     transition: 0.3s;
     &:active{
-        background-color: $action-color-primary !important;/*hice clase custom para que no afectara el slider*/        
+        background-color: $action-color-primary;/*hice clase custom para que no afectara el slider*/        
     }
     &:hover{
         @include hoverScale(1.1, 1.1);                

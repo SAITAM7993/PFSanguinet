@@ -1,10 +1,13 @@
 .c-link{   
+    color: white;
     transition: .2s;
     &:hover{
         @include hoverScale(0,0);
+        color: $action-color-contrast;
     }   
 }
 
 .dropdown-menu{
-    border: none !important; //saca el borde de bootstrap
+    border: none; //saca el borde de bootstrap
+    
 }

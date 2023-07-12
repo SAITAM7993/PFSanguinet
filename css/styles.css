@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /** CSS VARIABLES PREFIX **/
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500&display=swap");
 /** FONT SIZES (c-fs-number)**/
 /** COLORES **/
 /*reset inicio*/
@@ -33,16 +33,18 @@ header {
 }
 
 .c-link {
+  color: white;
   transition: 0.2s;
 }
 .c-link:hover {
-  color: #0080ff !important;
-  background-color: white !important;
+  color: #0080ff;
+  background-color: white;
   transform: scale(0, 0);
+  color: var(--def-color-primary-contrast, #0080ff);
 }
 
 .dropdown-menu {
-  border: none !important;
+  border: none;
 }
 
 .c-image {
@@ -58,65 +60,65 @@ header {
 
 .c-img-link {
   /*para cuando le haga  hover se agrande pero no tenga overflow*/
-  overflow: hidden !important;
+  overflow: hidden;
 }
 
 .c-image {
   /*para acomodar tamaño inicial de about us*/
   height: 100%;
   object-fit: cover;
-  overflow: hidden !important;
+  overflow: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Roboto", sans-serif !important;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
 }
 
 .c-h1 {
   text-shadow: 1px 1px 10px #000000;
-  font-family: "Roboto", sans-serif !important;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 4rem;
 }
 
 .c-h2 {
   text-shadow: 1px 1px 10px #000000;
-  font-family: "Roboto", sans-serif !important;
-  font-weight: 100 !important;
+  font-family: "Inter", sans-serif;
+  font-weight: 100;
   font-size: 3rem;
 }
 
 /*para el boton del header*/
 .c-h3 {
   margin: 5px 50px 5px 50px;
-  font-family: "Roboto", sans-serif !important;
+  font-family: "Inter", sans-serif;
   font-size: 1.25rem;
   font-weight: 400;
 }
 
 a {
   text-decoration: none;
-  font-family: "Roboto", sans-serif !important;
+  font-family: "Inter", sans-serif;
   font-weight: 300;
   /*para sacarle formato a los links del footer*/
 }
 
 p {
-  font-family: "Roboto", sans-serif !important;
-  font-weight: 300 !important;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
 }
 
 .p-small {
-  font-size: 1.25rem !important;
+  font-size: 1.25rem;
   color: rgb(100, 100, 100);
 }
 .p-middle {
-  font-size: 1.5rem !important;
+  font-size: 1.5rem;
   color: rgb(100, 100, 100);
 }
 .p-big {
-  font-size: 1.875rem !important;
+  font-size: 1.875rem;
   color: rgb(100, 100, 100);
 }
 
@@ -128,11 +130,11 @@ a {
   border-radius: 50px;
   transition: 0.3s;
   /*para redondear botones de boostrap*/
-  background-color: var(--def-color-primary, #0080ff) !important;
+  background-color: var(--def-color-primary, #0080ff);
 }
 .btn:hover {
-  color: #0080ff !important;
-  background-color: white !important;
+  color: #0080ff;
+  background-color: white;
   transform: scale(1.1, 1.1);
 }
 
@@ -154,17 +156,17 @@ a {
   transition: 0.3s;
 }
 .c-button:active {
-  background-color: var(--def-color-primary, #0080ff) !important; /*hice clase custom para que no afectara el slider*/
+  background-color: var(--def-color-primary, #0080ff); /*hice clase custom para que no afectara el slider*/
 }
 .c-button:hover {
-  color: #0080ff !important;
-  background-color: white !important;
+  color: #0080ff;
+  background-color: white;
   transform: scale(1.1, 1.1);
 }
 
 .c-link:hover {
-  color: #0080ff !important;
-  background-color: white !important;
+  color: #0080ff;
+  background-color: white;
   transform: scale(1.1, 1.1);
 }
 
@@ -195,11 +197,11 @@ a {
 
 .c-toggler-icon:active,
 .c-toggler-icon:hover {
-  border: none !important;
+  border: none;
 }
 
 .c-toggler-icon {
-  color: #dfdfdf !important;
+  color: #dfdfdf;
 }
 
 .navbar-toggler {
@@ -226,7 +228,7 @@ a {
     text-align: center;
   }
   a {
-    padding-left: 30px !important;
+    padding-left: 30px;
   }
 }
 @media (max-width: 511px) {
