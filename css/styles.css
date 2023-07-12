@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500&display=swap");
 /** FONT SIZES (c-fs-number)**/
 /** COLORES **/
+/** SHADOWS **/
 /*reset inicio*/
 * {
   margin: 0;
@@ -129,6 +130,7 @@ a {
 .btn {
   border-radius: 50px;
   transition: 0.3s;
+  border-color: var(--def-color-primary, #0080ff);
   /*para redondear botones de boostrap*/
   background-color: var(--def-color-primary, #0080ff);
 }
@@ -140,10 +142,13 @@ a {
 
 /*icono back to top*/
 .c-scroll-top {
+  color: var(--def-color-primary, #0080ff);
+  background-color: var(--def-color-primary, #0080ff);
   position: absolute;
   right: 3rem;
 }
 .c-scroll-top__link {
+  color: var(--def-color-primary, #0080ff);
   position: fixed; /*para que siga el scroll y quede fijo*/
   top: 94vh;
   transition: 0.3s;
@@ -154,20 +159,24 @@ a {
 
 .c-button {
   transition: 0.3s;
+  color: white;
 }
 .c-button:active {
   background-color: var(--def-color-primary, #0080ff); /*hice clase custom para que no afectara el slider*/
+  border-color: var(--def-color-primary, #0080ff);
 }
 .c-button:hover {
   color: #0080ff;
   background-color: white;
   transform: scale(1.1, 1.1);
+  border-color: var(--def-color-primary, #0080ff);
 }
 
 .c-link:hover {
   color: #0080ff;
   background-color: white;
   transform: scale(1.1, 1.1);
+  border-color: var(--def-color-primary, #0080ff);
 }
 
 .card-text {

@@ -5,6 +5,7 @@ a{
 .btn {
     border-radius: 50px;
     transition: .3s;
+    border-color: $action-color-primary;
     /*para redondear botones de boostrap*/
     background-color: $action-color-primary;
     &:hover{
@@ -14,9 +15,12 @@ a{
 
 /*icono back to top*/
 .c-scroll-top {    
+    color: $action-color-primary;
+    background-color: $action-color-primary;
     position: absolute;
     right: 3rem;    
     &__link{
+        color: $action-color-primary;        
         position: fixed;/*para que siga el scroll y quede fijo*/
         top: 94vh;
         transition: .3s;
@@ -28,16 +32,20 @@ a{
 
 .c-button{
     transition: 0.3s;
+    color: white;
     &:active{
-        background-color: $action-color-primary;/*hice clase custom para que no afectara el slider*/        
+        background-color: $action-color-primary;/*hice clase custom para que no afectara el slider*/    
+        border-color: $action-color-primary;
     }
     &:hover{
-        @include hoverScale(1.1, 1.1);                
+        @include hoverScale(1.1, 1.1);  
+        border-color: $action-color-primary;
     }
 }
 
 .c-link{
     &:hover {
         @include hoverScale(1.1, 1.1);
+        border-color: $action-color-primary;
     }
 }

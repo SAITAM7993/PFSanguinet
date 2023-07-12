@@ -30,12 +30,25 @@ $c-fs-9: 3rem !default; // 48px
 $c-fs-10: 3.75rem !default; // 60px
 $c-fs-11: 4rem !default; 
 
+
 /** COLORES **/
 $color-primary: #dfdfdf !default;
 $color-secondary: #000000 !default;
-$color-accent: #0080ff !default;
+$color-accent:#0080ff !default;
 $color-hover:white !default;
+
 
 $action-color-primary: var(--#{$prefix}-color-primary,$color-accent);
 $action-color-hover: var(--#{$prefix}-color-primary-hover, $color-hover);
 $action-color-contrast: var(--#{$prefix}-color-primary-contrast, $color-accent);
+
+
+/** SHADOWS **/
+$shadow-color: var(--#{prefix}-shadow-color, 51 65 85) !default; //inyectamos valor del prefijo a la variable css (interpolacion)
+$shadow-1: 0 1px 2px 0 rgb($shadow-color /0.05) !default;
+$shadow-2: 0 1px 3px 0 rgb($shadow-color /0.1), 0 1px 2px -1px rgb($shadow-color / 0.1) !default;
+$shadow-3: 0 4px 6px -1px rgb($shadow-color /0.1), 0 2px 4px -2px rgb($shadow-color / 0.1) !default;
+$shadow-4: 0 10px 15px -3px rgb($shadow-color /0.1), 0 4px 6px -4px rgb($shadow-color / 0.1) !default;
+$shadow-5: 0 20px 25px -5px rgb($shadow-color /0.1), 0 8px 10px -6px rgb($shadow-color / 0.1) !default;
+
+
