@@ -1,13 +1,17 @@
-.c-image {
+.c-image{
     /*para acomodar tamaño inicial de about us*/
     height: 100%;
+    width: 100%;
     object-fit: cover;
-    transition: all 0.5s;
+    //transition: all 0.5s;
+    overflow: hidden;
 
     /*paraque sea gradual*/
-    &:hover {
-        transform: scale(1.3);
+   /* &:hover {
+        transform: scale(1.1);
     }
+    se lo quite no me gustaba la animacion, cargaba mucho 
+    */
 
 }
 .c-img-link {
@@ -15,9 +19,3 @@
     overflow: hidden;
 }
 
-.c-image {
-    /*para acomodar tamaño inicial de about us*/
-    height: 100%;
-    object-fit: cover;
-    overflow: hidden;
-}

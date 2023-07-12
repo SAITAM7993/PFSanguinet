@@ -51,23 +51,19 @@ header {
 .c-image {
   /*para acomodar tamaño inicial de about us*/
   height: 100%;
+  width: 100%;
   object-fit: cover;
-  transition: all 0.5s;
+  overflow: hidden;
   /*paraque sea gradual*/
-}
-.c-image:hover {
-  transform: scale(1.3);
+  /* &:hover {
+       transform: scale(1.1);
+   }
+   se lo quite no me gustaba la animacion, cargaba mucho 
+   */
 }
 
 .c-img-link {
   /*para cuando le haga  hover se agrande pero no tenga overflow*/
-  overflow: hidden;
-}
-
-.c-image {
-  /*para acomodar tamaño inicial de about us*/
-  height: 100%;
-  object-fit: cover;
   overflow: hidden;
 }
 
@@ -232,6 +228,39 @@ a {
   width: 170px;
 }
 
+.contenedor-galeria {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 20px;
+  padding: 20px;
+}
+
+.grid-item:nth-child(1) {
+  grid-row-start: span 2;
+  grid-column-start: span 2;
+}
+
+.grid-item:nth-child(2) {
+  grid-row-start: span 2;
+  grid-column-start: span 2;
+}
+
+.grid-item:nth-child(11) {
+  grid-row-start: span 1;
+  grid-column-start: span 2;
+}
+
+.grid-item:nth-child(12) {
+  grid-row-start: span 1;
+  grid-column-start: span 2;
+}
+
+.grid-item:nth-last-child(1) {
+  grid-row-start: span 1;
+  grid-column-start: span 4;
+}
+
 @media (max-width: 990px) {
   .c-text-center {
     text-align: center;
@@ -257,6 +286,34 @@ a {
   .display-5 {
     font-size: 1.5rem;
   }
+  .contenedor-galeria {
+    grid-template-columns: 2fr 2fr;
+  }
+  .grid-item:nth-child(1) {
+    grid-row-start: span 2;
+    grid-column-start: span 2;
+  }
+  .grid-item:nth-child(2) {
+    grid-row-start: span 2;
+    grid-column-start: span 2;
+  }
+  .grid-item:nth-child(11) {
+    grid-row-start: span 2;
+    grid-column-start: span 2;
+  }
+  .grid-item:nth-child(12) {
+    grid-row-start: span 2;
+    grid-column-start: span 2;
+  }
+  .grid-item:nth-last-child(1) {
+    grid-row-start: span 2;
+    grid-column-start: span 2;
+  }
+  /*
+  .c-image{
+       height: 100%;
+       width: 100%;
+  }*/
 }
 /*nota: todos los estilos que tengan c- son estilos custom, no pisan bootstrap ni lo genérico css*/
 

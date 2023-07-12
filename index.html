@@ -23,73 +23,71 @@
 </head>
 
 <body>
-    <!--ver que tenga más enlaces internos y relativos que extrernos o absolutos-->
-    <section id="home">
-        <!--inicio navbar-->
-        <nav class="navbar fixed-top navbar-expand-lg bg-black" data-bs-theme="dark">
-            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <!--con el ms-auto dejo el hamburguer a la derecha-->
-                <span class="navbar-toggler-icon c-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
-                <!-- justify-content-center centra todo, va aca para que el boton de mobile no quede centrado-->
-                <ul class="navbar-nav">
-                    <li class="nav-item px-3"> <!--px es padding derecha-->
-                        <a class="c-link nav-link" aria-current="page" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item px-3">
-                        <a class="c-link nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item dropdown px-3">
-                        <a class="c-link nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            News
-                        </a>
-                        <!--subitems de news-->
-                        <ul class="dropdown-menu bg-black px-3">
-                            <li>
-                                <a class="c-link dropdown-item" href="./pages/theCrow.html">The crow</a>
-                            </li>
-                            <a class="c-link dropdown-item " href="./pages/theBeauty.html">The
-                                beauty</a>
-                            <li>
-                                <a class="c-link dropdown-item" href="./pages/theAwakening.html">The
-                                    awakening</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown px-3">
-                        <a class="c-link nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Gallery
-                        </a>
-                        <!--subitem de gallery-->
-                        <ul class="dropdown-menu bg-black px-3">
-                            <li><a class="c-link dropdown-item" href="./pages/gallery.html">Full gallery</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item px-3">
-                        <a class="c-link nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <!--fin navbar-->
-        <!--boton de contacto y titulo/subtitulo-->
-        <header class="d-flex flex-column justify-content-center text-white">
-            <div class="container-fluid">
-                <div class="col-lg-12 m-3 c-text-center">
-                    <h1 class="c-h1">ABYSMIAL</h1>
-                    <h2 class="display-5 c-h2">Dark thematic AI art</h2>
-                    <a class="c-link mt-2 btn btn-primary btn-lg" href="#contact" role="button">
-                        <p class="display-5 c-h3">Contact us</p>
+    <nav class="navbar fixed-top navbar-expand-lg bg-black" data-bs-theme="dark">
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <!--con el ms-auto dejo el hamburguer a la derecha-->
+            <span class="navbar-toggler-icon c-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+            <!-- justify-content-center centra todo, va aca para que el boton de mobile no quede centrado-->
+            <ul class="navbar-nav">
+                <li class="nav-item px-3"> <!--px es padding derecha-->
+                    <a class="c-link nav-link" aria-current="page" href="#home">Home</a>
+                </li>
+                <li class="nav-item px-3">
+                    <a class="c-link nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item dropdown px-3">
+                    <a class="c-link nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        News
                     </a>
-                </div>
+                    <!--subitems de news-->
+                    <ul class="dropdown-menu bg-black px-3">
+                        <li>
+                            <a class="c-link dropdown-item" href="./pages/theCrow.html">The crow</a>
+                        </li>
+                        <a class="c-link dropdown-item " href="./pages/theBeauty.html">The
+                            beauty</a>
+                        <li>
+                            <a class="c-link dropdown-item" href="./pages/theAwakening.html">The
+                                awakening</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown px-3">
+                    <a class="c-link nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Gallery
+                    </a>
+                    <!--subitem de gallery-->
+                    <ul class="dropdown-menu bg-black px-3">
+                        <li><a class="c-link dropdown-item" href="./pages/gallery.html">Full gallery</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item px-3">
+                    <a class="c-link nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--fin navbar-->
+
+    <!--boton de contacto y titulo/subtitulo-->
+    <header class="d-flex flex-column justify-content-center text-white">
+        <div class="container-fluid">
+            <div class="col-lg-12 m-3 c-text-center">
+                <h1 class="c-h1">ABYSMIAL</h1>
+                <h2 class="display-5 c-h2">Dark thematic AI art</h2>
+                <a class="c-link mt-2 btn btn-primary btn-lg" href="#contact" role="button">
+                    <p class="display-5 c-h3">Contact us</p>
+                </a>
             </div>
-        </header>
+        </div>
+    </header>
     </section>
 
     <section class="container mt-5 mb-5" id="about">
@@ -194,38 +192,38 @@
             <div class="row">
                 <!--p-2 es el padding-->
                 <div class="col-xl-3 col-md-6 col-sm-12 p-2">
-                    <img class="img-fluid" src="./media/img/single/loneliness.webp" alt="loneliness">
+                    <img class="img-fluid c-image" src="./media/img/single/loneliness.webp" alt="loneliness">
                 </div>
                 <div class="col-xl-3 col-md-6 col-sm-12 p-2">
-                    <img class="img-fluid" src="./media/img/single/home.webp" alt="home">
+                    <img class="img-fluid c-image" src="./media/img/single/home.webp" alt="home">
                 </div>
                 <div class=" col-xl-3 col-md-6 col-sm-12 p-2">
-                    <img class="img-fluid" src="./media/img/single/expanse.webp" alt="expanse">
+                    <img class="img-fluid c-image" src="./media/img/single/expanse.webp" alt="expanse">
                 </div>
                 <div class="col-xl-3 col-md-6 col-sm-12 p-2">
-                    <img class="img-fluid" src="./media/img/single/forgiveness.webp" alt="forgiveness">
+                    <img class="img-fluid c-image" src="./media/img/single/forgiveness.webp" alt="forgiveness">
                 </div>
             </div>
             <div class="row">
                 <div class="col-xl-6 col-sm-12 p-2">
-                    <img class="img-fluid" src="./media/img/single/blueIcon_2.webp" alt="blue icon">
+                    <img class="img-fluid c-image" src="./media/img/single/blueIcon_2.webp" alt="blue icon">
                 </div>
                 <div class="col-xl-6 col-sm-12 p-2">
-                    <img class="img-fluid" src="./media/img/single/blueIcon_3.webp" alt="blue icon 2">
+                    <img class="img-fluid c-image" src="./media/img/single/blueIcon_3.webp" alt="blue icon 2">
                 </div>
             </div>
             <div class="row">
                 <div class="col-xl-3 col-md-6 col-sm-12 p-2">
-                    <img class="img-fluid" src="./media/img/single/iconOfSin.webp" alt="icon of sin">
+                    <img class="img-fluid c-image" src="./media/img/single/iconOfSin.webp" alt="icon of sin">
                 </div>
                 <div class="col-xl-3 col-md-6 col-sm-12 p-2">
-                    <img class="img-fluid" src="./media/img/single/theCastle.webp" alt="the castle">
+                    <img class="img-fluid c-image" src="./media/img/single/theCastle.webp" alt="the castle">
                 </div>
                 <div class="col-xl-3 col-md-6 col-sm-12 p-2">
-                    <img class="img-fluid" src="./media/img/single/vulnerability.webp" alt="vulnerability">
+                    <img class="img-fluid c-image" src="./media/img/single/vulnerability.webp" alt="vulnerability">
                 </div>
                 <div class="col-xl-3 col-md-6 col-sm-12 p-2">
-                    <img class="img-fluid" src="./media/img/single/decayingMemory.webp" alt="decaying memory">
+                    <img class="img-fluid c-image" src="./media/img/single/decayingMemory.webp" alt="decaying memory">
                 </div>
             </div>
             <div class="d-grid col-4 mx-auto py-5">

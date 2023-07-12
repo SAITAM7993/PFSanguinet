@@ -27,5 +27,40 @@
     .display-5 {
         font-size: $c-fs-6;
     }
+
+    .contenedor-galeria{
+        grid-template-columns: 2fr 2fr;      
+    }
+
+        .grid-item:nth-child(1) {
+            grid-row-start: span 2;
+            grid-column-start: span 2;
+        }
+    
+        .grid-item:nth-child(2) {
+            grid-row-start: span 2;
+            grid-column-start: span 2;
+        }
+    
+        .grid-item:nth-child(11) {
+            grid-row-start: span 2;
+            grid-column-start: span 2;
+        }
+    
+        .grid-item:nth-child(12) {
+            grid-row-start: span 2;
+            grid-column-start: span 2;
+        }
+    
+        .grid-item:nth-last-child(1) {
+            grid-row-start: span 2;
+            grid-column-start: span 2;
+        }
+    /*
+    .c-image{
+         height: 100%;
+         width: 100%;
+    }*/
    
 }
+
