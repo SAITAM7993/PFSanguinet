@@ -52,3 +52,10 @@ $shadow-4: 0 10px 15px -3px rgb($shadow-color /0.1), 0 4px 6px -4px rgb($shadow-
 $shadow-5: 0 20px 25px -5px rgb($shadow-color /0.1), 0 8px 10px -6px rgb($shadow-color / 0.1) !default;
 
 
+//BREAKPOINTS
+$breakpoints: (
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    ) !default;

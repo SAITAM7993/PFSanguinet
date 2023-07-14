@@ -9,9 +9,73 @@
         transform: translateY(-3%) ;
         background-color: $color-secondary;
         color: white; 
-        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+        box-shadow: $shadow-2;
         .p-big, .p-small, .p-middle{
             color: white;
+        }
+    }
+}
+
+//Clases particulares de cards
+.c-card {
+    border: none;
+    overflow: hidden;    
+    transition: all .3s ease;
+    box-shadow: none;
+    border-radius: 5px ;
+    background-color: white;  
+    margin: 20px;
+    
+      
+
+    &:hover {
+        box-shadow: $shadow-5; 
+        transform: scale(1.05);
+        background-color: $color-secondary;
+        color: white;     
+        
+    }
+
+    &-content {
+        padding: 20px 18px;
+        font-weight: 200;
+    }
+
+    &-title {
+        margin-bottom: 20px;
+        font-size: $c-fs-7;
+        font-weight: 500;
+    }
+
+    &-image { 
+        width: 100%;
+        height:auto;       
+    }
+
+    &-text {
+        margin-bottom: 24px;   
+        font-size: $c-fs-5;
+    
+    }
+    
+}
+
+.c-card-container {
+    gap: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    .c-card {
+        flex: 0 0 auto;
+        width: 100%;
+
+        @include sm {
+            width: calc(60% - 8px);
+        }
+
+        @include xl {
+            width: calc(30% - 12px);
         }
     }
 }

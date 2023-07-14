@@ -4,3 +4,41 @@
     background-color: $color-hover;
     transform:scale($x, $y);
 }
+/**CREA MEDIA QUERY BREAKPOINTS**/
+@mixin break-up($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+        @media(min-width: map-get($breakpoints, $breakpoint)) {
+            @content;
+        }
+
+    }
+
+    @else {
+
+        @warn "`#{$breakpoint}`no es un breakppint valido. Intentar con: #{map-keys($breakpoints)}";
+    }
+}
+
+@mixin sm() {
+    @include break-up(sm) {
+        @content;
+    }
+}
+
+@mixin md() {
+    @include break-up(md) {
+        @content;
+    }
+}
+
+@mixin lg() {
+    @include break-up(lg) {
+        @content;
+    }
+}
+
+@mixin xl() {
+    @include break-up(xl) {
+        @content;
+    }
+}
